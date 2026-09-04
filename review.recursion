@@ -1,0 +1,16 @@
+#include <stdio.h>
+long long fact(int n)
+{
+    if(n <= 1)
+        return 1;
+    return n * fact(n - 1);
+}
+int main(void)
+{
+    int num;
+    printf("请输入求阶乘的数字：");
+    num = 5;
+    long long res = fact(num);
+    printf("%d! = %lld\n", num, res);
+    return 0;
+}
